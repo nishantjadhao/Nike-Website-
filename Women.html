@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3666b88218.js" crossorigin="anonymous"></script>
+
+    <style>
+        #Nav {
+            width: 99%;
+            height: 40px;
+            background-color: black;
+            position: absolute;
+            z-index: 3;
+            position: fixed;
+            top: 0px;
+            display: flex;
+        }
+
+        #image {
+            width: 38%;
+            height: 35px;
+        }
+
+        #block1 {
+            width: 12%;
+            height: 40px;
+            background-color: black;
+        }
+
+        #block2 {
+            width: 30%;
+            height: 38px;
+            margin-left: 59%;
+        }
+
+        #navigation {
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+            margin-top: 3%;
+        }
+
+        #icon {
+            width: 8%;
+            height: 30px;
+        }
+
+        #Navi {
+            width: 100%;
+            height: 60px;
+            background-color: #3F4F44;
+            margin-top: 2.8%;
+            display: flex;
+        }
+
+        #box1 {
+            width: 20%;
+            height: 45px;
+            margin: 8px;
+        }
+
+        img {
+            width: 39%;
+            height: 100%;
+        }
+
+        #box2 {
+            width: 50%;
+            height: 30px;
+            margin: 20.5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            margin-left: 6%;
+            margin-top: 5%;
+        }
+
+        #box3 {
+            width: 30%;
+            height: 45px;
+            margin: 8px;
+        }
+
+        input {
+            width: 38%;
+            height: 33px;
+            margin-left: 30%;
+            margin-top: 1.8%;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        i {
+            margin-left: 2%;
+        }
+
+        #Division1 {
+            width: 100%;
+            height: 4800px;
+            background-color: rgba(64, 65, 67, 0.553);
+        }
+
+        #squar1 {
+            width: 49%;
+            height: 500px;
+            /* background-color: rgb(15, 235, 48); */
+            float: left;
+            box-shadow: 20px 12px 10px black;
+        }
+
+        #Cover {
+            width: 100%;
+            height: 500px;
+        }
+
+        #squar2 {
+            width: 50%;
+            height: 500px;
+            /* background-color: rgb(176, 237, 8); */
+            float: left;
+            box-shadow: 15px 12px 10px black;
+        }
+
+        #squar3 {
+            width: 100%;
+            height: 200px;
+            /* background-color: brown; */
+            margin-top: 2%;
+            float: left;
+        }
+
+        #squar4 {
+            width: 49%;
+            height: 500px;
+            /* background-color: rgb(16, 97, 196); */
+            float: left;
+            box-shadow: 15px 12px 10px black;
+        }
+
+        #squar5 {
+            width: 50%;
+            height: 500px;
+            /* background-color: rgb(110, 165, 42); */
+            float: left;
+            box-shadow: 15px 12px 10px black;
+
+        }
+
+        #squar6 {
+            width: 98%;
+            height: 750px;
+            /* background-color: rgb(10, 214, 41); */
+            float: left;
+            margin-top: 3%;
+            margin-left: 1%;
+            box-shadow: 15px 12px 10px black;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+
+        }
+
+        #CoverBox1 {
+            width: 50%;
+            height: 500px;
+            /* background-color: rgb(139, 9, 159); */
+            float: left;
+        }
+
+        #CoverBox2 {
+            width: 50%;
+            height: 500px;
+            background-color: rgb(211, 228, 26);
+            float: left;
+        }
+
+        ol li {
+            text-align: center;
+            list-style-type: none;
+            font-size: 45px;
+            color: white;
+            /* padding: 1%; */
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        #Cover1 {
+            width: 100%;
+            height: 750px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        #squar7 {
+            width: 100%;
+            height: 180px;
+            /* background-color: chartreuse; */
+            float: left;
+            margin-top: 1.2%;
+        }
+
+        #squar8 {
+            width: 100%;
+            height: 530px;
+            /* background-color: chartreuse; */
+            float: left;
+            margin-top: 1.2%;
+            display: flex;
+        }
+
+        #contentBox {
+            width: 32%;
+            height: 500px;
+            /* background-color: blueviolet; */
+            margin-left: 1%;
+            margin-top: 1%;
+            border-radius: 50px;
+            box-shadow: 15px 12px 10px black;
+        }
+
+        #ContImg {
+            width: 100%;
+            height: 500px;
+            border-radius: 50px;
+        }
+
+        #squar9 {
+            width: 100%;
+            height: 460px;
+            /* background-color: chartreuse; */
+            float: left;
+            margin-top: 1.2%;
+        }
+
+        #contentBox1 {
+            width: 30%;
+            height: 380px;
+            /* background-color: blueviolet; */
+            float: left;
+            margin-left: 2%;
+            margin-top: 1%;
+            border-radius: 50px;
+            box-shadow: 15px 12px 10px black;
+            border: 1px solid red;
+        }
+
+        #ContImg1 {
+            width: 100%;
+            height: 380px;
+            border-radius: 50px;
+            border: 2px solid red;
+        }
+
+        #ContImg1:hover {
+            transform: scale(1.1, 1.1);
+            /* background-color: blueviolet; */
+
+        }
+
+        #squar10 {
+            width: 100%;
+            height: 350px;
+            /* background-color: rgb(235, 88, 8); */
+            float: left;
+            margin-top: 5%;
+        }
+
+        #contentBox2 {
+            width: 50%;
+            height: 310px;
+            /* background-color: blueviolet; */
+            float: left;
+        }
+
+        #photos {
+            width: 100%;
+            height: 310px;
+        }
+
+        #squar11 {
+            width: 100%;
+            height: 450px;
+            /* background-color: rgb(8, 235, 76); */
+            float: left;
+            margin-top: 5%;
+        }
+
+        #contentBox3 {
+            width: 31.4%;
+            height: 400px;
+            /* background-color: blueviolet; */
+            float: left;
+            margin-left: 1.5%;
+            box-shadow: 15px 12px 10px black;
+            border: 1px solid red;
+        }
+
+        #photos1:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #photos1 {
+            width: 100%;
+            height: 400px;
+        }
+
+        #squar12 {
+            width: 100%;
+            height: 450px;
+            /* background-color: rgb(235, 88, 8); */
+            float: left;
+            margin-top: 2%;
+        }
+
+        #contentBox4 {
+            width: 32%;
+            height: 400px;
+            /* background-color: blueviolet; */
+            float: left;
+            margin-left: 1%;
+        }
+
+        #photos2 {
+            width: 100%;
+            height: 400px;
+        }
+
+        footer {
+            width: 100%;
+            height: 300px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: rgb(18, 17, 17);
+        }
+
+        #main3 {
+            width: 75%;
+            height: 280px;
+            margin-left: 2%;
+            float: left;
+            /* background-color: blueviolet; */
+        }
+
+        #tab1 {
+            width: 70%;
+            height: 50px;
+            color: white;
+        }
+
+        #tab2 {
+            font-size: 16px;
+            padding: 7px;
+            text-align: left;
+            color: white;
+        }
+
+        #tab3 {
+            font-size: 20px;
+            text-align: left;
+            padding: 7px;
+            color: white;
+        }
+
+        #main4 {
+            width: 20%;
+            height: 50px;
+            /* background-color: blue; */
+            float: left;
+            /* margin-left: 25%; */
+            margin-top: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Nav">
+        <div id="block1">
+            <img src="./air-jordan symbol.png" alt="" id="image">
+        </div>
+        <div id="block2">
+            <nav id="navigation">
+                <a href="Help.html">Help</a>
+                <a href="Joins.html">Join Us</a>
+                <a href="Login.html">Sign In</a>
+                <a href="Login.html"><i class="fa-solid fa-user fa-xl" id="icon" style="color: white;"></i></a>
+            </nav>
+        </div>
+    </div>
+    <div id="Division1">
+        <div id="Navi">
+            <div id="box1">
+                <img src="./hockey1.png" alt="">
+            </div>
+            <div id="box2">
+                <a href="Nikeshose.html">Home</a>
+                <a href="Featuerd.html">New & Featured</a>
+                <a href="Men.html">Men</a>
+                <a href="Women.html">Women</a>
+            </div>
+            <div id="box3">
+                <form action="">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-regular fa-heart fa-xl" style="color:white;"></i>
+                    <i class="fa-solid fa-bag-shopping fa-xl" style="color: white;"></i>
+                </form>
+            </div>
+        </div>
+        <div id="squar1" onclick="window.location.href='Login.html';">
+            <img src="1. Running.png" alt="" id="Cover">
+        </div>
+        <div id="squar2" onclick="window.location.href='Login.html';">
+            <img src="images Women Cover page1.jpeg" alt="" id="Cover">
+        </div>
+        <div id="squar3">
+            <ol>
+                <p>A`One</p>
+                <li>FOR THE REAL ONES</li>
+                <p>Channel A`ja Wilson's unpologetic aura in her first signature collection.</p>
+            </ol>
+        </div>
+        <div id="squar4">
+            <img src="Second Cover Page3.jpg" alt="" id="Cover">
+        </div>
+        <div id="squar5">
+            <div id="CoverBox1">
+                <img src="Second Cover Page2.jpeg" alt="" id="Cover">
+            </div>
+            <div id="CoverBox2">
+                <img src="Second Cover Page1.jpeg" alt="" id="Cover">
+            </div>
+        </div>
+        <div id="squar6">
+            <img src="Second Cover Page5.jpg" id="Cover1">
+        </div>
+        <div id="squar7">
+            <ol>
+                <li>TURN OFFSEASON ON</li>
+                <p>Run Through Summer With Gear That Can Take The heat.</p>
+            </ol>
+        </div>
+        <p>Latest&Greatest</p>
+        <div id="squar8">
+            <div id="contentBox">
+                <img src="24-7 Women.jpg" alt="" id="ContImg">
+            </div>
+            <div id="contentBox">
+                <img src="24-7 Women2.jpg" alt="" id="ContImg">
+            </div>
+            <div id="contentBox">
+                <img src="24-7 Women 3.jpg" alt="" id="ContImg">
+            </div>
+        </div>
+        <div id="squar9">
+            <div id="contentBox1" onclick="window.location.href='Featuerd.html';">
+                <img src="nike alphafly 2.jpeg" alt="" id="ContImg1">
+                <p>nike alphafly3 </p>
+                <p>Women's Road Racing Shoes</p>
+
+            </div>
+            <div id="contentBox1" onclick="window.location.href='Featuerd.html';">
+                <img src="jordan 4 retro1.jpeg" alt="" id="ContImg1">
+                <p>jordan 4 retro 'Aluminum'</p>
+                <p>Women's Shoes</p>
+            </div>
+            <div id="contentBox1" onclick="window.location.href='Featuerd.html';">
+                <img src="jordan 4 retro 2.jpeg" alt="" id="ContImg1">
+                <p>jordan 4 retro 'Aluminum'</p>
+                <p>Women's Shoes</p>
+            </div>
+        </div>
+        <div id="squar10">
+            <div id="contentBox2">
+                <img src="Seasonal Shop L DT img.jpg" alt="" id="photos">
+                <p>Sprin Essntials</p>
+            </div>
+            <div id="contentBox2">
+                <img src="trail running dt.jpg" alt="" id="photos">
+                <p>Trail Running Looks </p>
+            </div>
+        </div>
+        <div id="squar11">
+            <div id="contentBox3" onclick="window.location.href='Featuerd.html';">
+                <img src="pegasus 1.jpeg" alt="" id="photos1">
+                <p>Pegasus</p>
+            </div>
+            <div id="contentBox3" onclick="window.location.href='Featuerd.html';">
+                <img src="jordan 4 retro 2.jpeg" alt="" id="photos1">
+                <p>Jordan</p>
+            </div>
+            <div id="contentBox3" onclick="window.location.href='Featuerd.html';">
+                <img src="air force 1;07 3.jpeg" alt="" id="photos1">
+                <p>Air Force</p>
+            </div>
+        </div>
+        <div id="squar12" onclick="window.location.href='Featuerd.html';">
+            <div id="contentBox4">
+                <img src="4. Training.png" alt="" id="photos2">
+                <p>Training</p>
+            </div>
+            <div id="contentBox4" onclick="window.location.href='Featuerd.html';">
+                <img src="2. Football.png" alt="" id="photos2">
+                <p>Football</p>
+            </div>
+            <div id="contentBox4" onclick="window.location.href='Featuerd.html';">
+                <img src="1. Running.png" alt="" id="photos2">
+                <p>Running</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="main3">
+            <table id="tab1">
+                <tr>
+                    <td id="tab3">Resources</td>
+                    <td id="tab3">Help</td>
+                    <td id="tab3">Company</td>
+                </tr>
+                <tr>
+                    <td id="tab2">Find A Store</td>
+                    <td id="tab2">Get Help</td>
+                    <td id="tab2">About Nike</td>
+                </tr>
+                <tr>
+                    <td id="tab2">Become A Member</td>
+                    <td id="tab2">Order Status</td>
+                    <td id="tab2">News</td>
+                </tr>
+                <tr>
+                    <td id="tab2">Send Us Feedback</td>
+                    <td id="tab2">Delivery</td>
+                    <td id="tab2">Careers</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                    <td id="tab2">Returns</td>
+                    <td id="tab2">Investors</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                    <td id="tab2">Payment Options</td>
+                    <td id="tab2">Sustainability</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                    <td id="tab2">Report a Concern</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="main4">
+            <i class="fa-brands fa-square-twitter fa-xl" style="color: white;" id="icon1"></i>
+            <i class="fa-brands fa-square-facebook fa-xl" style="color: white;" id="icon2"></i>
+            <i class="fa-brands fa-square-youtube fa-xl" style="color: white;" id="icon2"></i>
+            <i class="fa-brands fa-square-instagram fa-xl" style="color: white;" id="icon2"></i>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

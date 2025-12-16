@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3666b88218.js" crossorigin="anonymous"></script>
+
+    <style>
+        #Nav {
+            width: 99%;
+            height: 40px;
+            background-color: black;
+            position: absolute;
+            z-index: 3;
+            position: fixed;
+            top: 0px;
+            display: flex;
+        }
+
+        #image {
+            width: 38%;
+            height: 35px;
+        }
+
+        #block1 {
+            width: 12%;
+            height: 40px;
+            background-color: black;
+        }
+
+        #block2 {
+            width: 30%;
+            height: 38px;
+            margin-left: 59%;
+        }
+
+        #navigation {
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+            margin-top: 3%;
+        }
+
+        #icon {
+            width: 8%;
+            height: 30px;
+        }
+
+        #Navi {
+            width: 100%;
+            height: 60px;
+            background-color: #3F4F44;
+            margin-top: 2.8%;
+            display: flex;
+        }
+
+        #box1 {
+            width: 20%;
+            height: 45px;
+            margin: 8px;
+        }
+
+        img {
+            width: 39%;
+            height: 100%;
+        }
+
+        #box2 {
+            width: 50%;
+            height: 30px;
+            margin: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            margin-left: 6%;
+            margin-top: 5%;
+        }
+
+        #box3 {
+            width: 30%;
+            height: 45px;
+            margin: 8px;
+        }
+
+        input {
+            width: 38%;
+            height: 33px;
+            margin-left: 30%;
+            margin-top: 1.8%;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        i {
+            margin-left: 2%;
+        }
+
+        #main {
+            width: 80%;
+            height: 2950px;
+            margin-left: 20%;
+            background-color: rgba(64, 65, 67, 0.553);
+
+        }
+
+        #main1 {
+            width: 20%;
+            height: 2950px;
+            background-color: rgba(64, 65, 67, 0.553);
+            /* background-color: brown; */
+            float: left;
+        }
+
+        #main2 {
+            width: 100%;
+            height: 2950px;
+            background-color: rgba(64, 65, 67, 0.553);
+            float: left;
+        }
+
+        #div1 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div2 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div3 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div4 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div5 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div6 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div7 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div8 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div9 {
+            width: 31%;
+            height: 300px;
+            float: left;
+            margin: 1.1%;
+        }
+
+        #div1:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div2:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div3:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div4:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div5:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div6:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div7:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div8:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        #div9:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        footer {
+            width: 100%;
+            height: 300px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: rgb(18, 17, 17);
+        }
+
+        #main3 {
+            width: 75%;
+            height: 280px;
+            margin-left: 2%;
+            float: left;
+            /* background-color: blueviolet; */
+        }
+
+        #tab1 {
+            width: 70%;
+            height: 50px;
+            color: white;
+        }
+
+        #tab2 {
+            font-size: 16px;
+            padding: 7px;
+            text-align: left;
+            color: white;
+        }
+
+        #tab3 {
+            font-size: 20px;
+            text-align: left;
+            padding: 7px;
+            color: white;
+        }
+
+        #main4 {
+            width: 20%;
+            height: 50px;
+            /* background-color: blue; */
+            float: left;
+            /* margin-left: 25%; */
+            margin-top: 1%;
+        }
+
+        #icon1 {
+            width: 5%;
+            height: 15px;
+            margin-left: 15%;
+        }
+
+        #icon2 {
+            width: 5%;
+            height: 15px;
+            margin-left: 10%;
+        }
+
+
+
+        #head {
+            width: 80%;
+            height: 80px;
+            margin-left: 5%;
+
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 23px;
+            color: white;
+        }
+
+        ul li {
+            font-size: 19px;
+            font-weight: lighter;
+            color: white;
+            list-style-type: none;
+            text-align: left;
+
+        }
+
+        h3 {
+            margin-top: 0%;
+            font-size: 19px;
+            font-weight: bolder;
+        }
+
+        #hover {
+            width: 80%;
+            height: 39px;
+            margin-left: 1%;
+            /* margin-top: 1px; */
+            /* position: absolute; */
+            position: relative;
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            border-top: 1px solid black;
+        }
+
+        #hover:hover {
+            width: 80%;
+            height: 110px;
+            z-index: 2;
+            background-color: rgb(64, 65, 67);
+
+        }
+
+        #hover1 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            /* background-color: blue; */
+            background-color: rgb(64, 65, 67);
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover1:hover {
+            width: 80%;
+            height: 150px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover2 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover2:hover {
+            width: 80%;
+            height: 100px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover3 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* background-color: blue; */
+            background-color: rgb(64, 65, 67);
+            /* margin-top: 1%; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover3:hover {
+            width: 80%;
+            height: 150px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover4 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            background-color: rgb(64, 65, 67);
+            /* margin-top: 1%; */
+            /* background-color: blue; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover4:hover {
+            width: 80%;
+            height: 100px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover5 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover5:hover {
+            width: 80%;
+            height: 240px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover6 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover6:hover {
+            width: 80%;
+            height: 193px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover7 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover7:hover {
+            width: 80%;
+            height: 193px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover8 {
+            width: 80%;
+            height: 40px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            position: relative;
+            border-top: 1px solid black;
+        }
+
+        #hover8:hover {
+            width: 80%;
+            height: 100px;
+            z-index: 3;
+            background-color: rgb(64, 65, 67);
+        }
+
+        #hover9 {
+            width: 80%;
+            height: 45px;
+            margin-left: 1%;
+            /* margin-top: 1%; */
+            background-color: rgb(64, 65, 67);
+            /* background-color: blue; */
+            position: relative;
+            /* border-top: 1px solid black; */
+        }
+
+
+        ol li {
+            font-size: 19px;
+            font-weight: lighter;
+            color: white;
+            list-style-type: none;
+            text-align: left;
+
+        }
+
+        #img1 {
+            width: 90%;
+            height: 280px;
+        }
+
+        #hover10 {
+            width: 100%;
+            height: 700px;
+            margin-top: 100%;
+            float: left;
+        }
+
+        #ADD {
+            width: 100%;
+            height: 700px;
+        }
+
+        #hover11 {
+            width: 100%;
+            height: 700px;
+            margin-top: 70%;
+            float: left;
+        }
+
+        #ADD1 {
+            width: 100%;
+            height: 700px;
+        }
+
+        span {
+            font-size: 19px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Nav">
+        <div id="block1">
+            <img src="./air-jordan symbol.png" alt="" id="image">
+        </div>
+        <div id="block2">
+            <nav id="navigation">
+                <a href="Help.html">Help</a>
+                <a href="Joins.html">Join Us</a>
+                <a href="Login.html">Sign In</a>
+                <a href="Login.html"><i class="fa-solid fa-user fa-xl" id="icon" style="color: white;"></i></a>
+            </nav>
+        </div>
+    </div>
+    <div id="Navi">
+        <div id="box1">
+            <img src="./hockey1.png" alt="">
+        </div>
+        <div id="box2">
+            <a href="Nikeshose.html">Home</a>
+            <a href="Featuerd.html">New & Featured</a>
+            <a href="Men.html">Men</a>
+            <a href="Women.html">Women</a>
+        </div>
+        <div id="box3">
+            <form action="">
+                <input type="text" placeholder="Search">
+                <i class="fa-regular fa-heart fa-xl" style="color:white;"></i>
+                <i class="fa-solid fa-bag-shopping fa-xl" style="color: white;"></i>
+            </form>
+        </div>
+    </div>
+    <div id="main1">
+        <h2>New Season 2025(3279)</h2>
+
+        <div id="head">
+            <ol>
+                <li onclick="window.location.href='Featuerd.html';">Kids</li>
+                <li onclick="window.location.href='Men.html';">Mens</li>
+                <li onclick="window.location.href='Women.html';">Women</li>
+                </0l>
+        </div>
+        <div id="hover">
+            <ol>
+                <li>Product Type</li>
+                <li>Accessories</li>
+                <li>Shoes</li>
+                <li>Equipment</li>
+            </ol>
+        </div>
+        <div id="hover1">
+            <ol>
+                <li>Brand</li>
+                <li>ACG</li>
+                <li>Jordan</li>
+                <li>Nike Pro</li>
+                <li>Nike Lab</li>
+            </ol>
+        </div>
+        <div id="hover2">
+            <ol>
+                <li>Sale & Offers</li>
+                <li>Sale</li>
+            </ol>
+        </div>
+        <div id="hover3">
+            <ol>
+                <li>Gender</li>
+                <li>Kids'</li>
+                <li>Men</li>
+                <li>Unisex</li>
+                <li>Women</li>
+            </ol>
+        </div>
+        <div id="hover4">
+            <ol>
+                <li>Kids</li>
+                <li>Boys</li>
+                <li>Girls</li>
+            </ol>
+        </div>
+        <div id="hover5">
+            <ol>
+                <li>Size Range</li>
+                <li>Babies & Toddelers<br>(OM-4T)</li>
+                <li>Babies & Toddelers<br>(1C-10T)</li>
+                <li>Little Kids'<br>(10.5C-3Y)</li>
+                <li>Older Kids'<br>(3.5Y-7Y)</li>
+            </ol>
+        </div>
+        <div id="hover6">
+            <ol>
+                <li>Icon</li>
+                <li>Air Force1</li>
+                <li>Air Max</li>
+                <li>Air zoom</li>
+                <li>alphafly</li>
+            </ol>
+        </div>
+        <div id="hover7">
+            <ol>
+                <li>Jordan Icon</li>
+                <li>Air Jordan</li>
+                <li>jordan 23/7</li>
+                <li>legacy</li>
+                <li>Post Slide</li>
+            </ol>
+        </div>
+        <div id="hover8">
+            <ol>
+                <li>Air Max</li>
+                <li>Air Max 1</li>
+                <li>Air Max 270</li>
+            </ol>
+        </div>
+        <div id="hover9">
+
+        </div>
+        <div id="hover10">
+            <img src="Ads.jpeg" alt="" id="ADD">
+        </div>
+        <div id="hover11">
+            <img src="ads2.jpeg" alt="" id="ADD1">
+        </div>
+    </div>
+    <div id="main">
+        <div id="main2">
+            <div id="div1" onclick="window.location.href='Men.html';">
+                <span>Nike Vomero 18</span>
+                <img src="./download1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div1" onclick="window.location.href='Men.html';">
+                <span>Nike Vomero 18</span>
+                <img src="./download2.jpeg" alt="" id="img1" onclick="window.location.href='Featuerd.html';">
+            </div>
+            <div id="div1" onclick="window.location.href='Men.html';">
+                <span>Nike Vomero 18</span>
+                <img src="./download3.jpeg" alt="" id="img1">
+            </div>
+            <div id="div2" onclick="window.location.href='Men.html';">
+                <span>Air Force 1'07 lx</span>
+                <img src="./air force 1'07 1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div2" onclick="window.location.href='Men.html';">
+                <span>Air Force 1'07 lx</span>
+                <img src="./air force 1'07 2.jpeg" alt="" id="img1">
+            </div>
+            <div id="div2" onclick="window.location.href='Men.html';">
+                <span>Air Force 1'07 lx</span>
+                <img src="./air force 1;07 3.jpeg" alt="" id="img1">
+            </div>
+            <div id="div3" onclick="window.location.href='Women.html';">
+                <span>Air Force 1'07 lx</span>
+                <img src="./air force 1;07 4.jpeg" alt="" id="img1">
+            </div>
+            <div id="div3" onclick="window.location.href='Women.html';">
+                <span>Nike Air Plus</span>
+                <img src="./air plus 1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div3" onclick="window.location.href='Women.html';">
+                <span>Nike Air Plus</span>
+                <img src="./air plus 2.jpeg" alt="" id="img1">
+            </div>
+            <div id="div4" onclick="window.location.href='Women.html';">
+                <span>Nike Air Plus</span>
+                <img src="./air plus 3.jpeg" alt="" id="img1">
+            </div>
+            <div id="div4" onclick="window.location.href='Men.html';">
+                <span>Air Jordan 4retro</span>
+                <img src="./jordan 4 retro1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div4" onclick="window.location.href='Men.html';">
+                <span>Air Jordan 4retro</span>
+                <img src="./jordan 4 retro 2.jpeg" alt="" id="img1">
+            </div>
+            <div id="div5" onclick="window.location.href='Men.html';">
+                <span>Air Jordan 4retro</span>
+                <img src="jordan 4 retro 3.jpeg" alt="" id="img1">
+            </div>
+            <div id="div5" onclick="window.location.href='Women.html';">
+                <span>Nike Air Max Dn8</span>
+                <img src="./nike air max dn82.jpeg" alt="" id="img1">
+            </div>
+            <div id="div5" onclick="window.location.href='Women.html';">
+                <span>Nike Air Max Dn8</span>
+                <img src="nike air max dn83.jpeg" alt="" id="img1">
+            </div>
+            <div id="div6" onclick="window.location.href='Women.html';">
+                <span>Nike Air Max Dn8</span>
+                <img src="nike air max dn84.jpeg" alt="" id="img1">
+            </div>
+            <div id="div6" onclick="window.location.href='Men.html';">
+                <span>Nike Air Max Dn8</span>
+                <img src="nike air max dn85.jpeg" alt="" id="img1">
+            </div>
+            <div id="div6" onclick="window.location.href='Men.html';">
+                <span>Nike Air Max Dn8</span>
+                <img src="nike air max dn86.jpeg" alt="" id="img1">
+            </div>
+            <div id="div7" onclick="window.location.href='Men.html';">
+                <span>Nike Aplphafly 3</span>
+                <img src="./nike alphafly 1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div7"onclick="window.location.href='Men.html';">
+                <span>Nike Aplphafly 3</span>
+                <img src="./nike alphafly 2.jpeg" alt="" id="img1">
+            </div>
+            <div id="div7" onclick="window.location.href='Women.html';">
+                <span>Nike Aplphafly 3</span>
+                <img src="./nike alphafly 3.jpeg" alt="" id="img1">
+            </div>
+            <div id="div8" onclick="window.location.href='Women.html';">
+                <span>Nike Metcon 6 Premium</span>
+                <img src="./nike metcon 6 pre 1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div8" onclick="window.location.href='Women.html';">
+                <span>Nike Metcon 6 Premium</span>
+                <img src="./nike metcon 6 pre 2.jpeg" alt="" id="img1">
+            </div>
+            <div id="div8" onclick="window.location.href='Men.html';">
+                <span>Nike Metcon 6 Premium</span>
+                <img src="./nike metcon 6 pre 3.jpeg" alt="" id="img1">
+            </div>
+            <div id="div9" onclick="window.location.href='Men.html';">
+                <span>Nike Pegasus</span>
+                <img src="./pegasus 1.jpeg" alt="" id="img1">
+            </div>
+            <div id="div9" onclick="window.location.href='Men.html';">
+                <span>Nike Pegasus</span>
+                <img src="./pegasus 2.jpeg" alt="" id="img1">
+            </div>
+            <div id="div9" onclick="window.location.href='Men.html';">
+                <span>Nike Pegasus</span>
+                <img src="./pegasus 3.jpeg" alt="" id="img1">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="main3">
+            <table id="tab1">
+                <tr>
+                    <td id="tab3">Resources</td>
+                    <td id="tab3">Help</td>
+                    <td id="tab3">Company</td>
+                </tr>
+                <tr>
+                    <td id="tab2">Find A Store</td>
+                    <td id="tab2">Get Help</td>
+                    <td id="tab2">About Nike</td>
+                </tr>
+                <tr>
+                    <td id="tab2">Become A Member</td>
+                    <td id="tab2">Order Status</td>
+                    <td id="tab2">News</td>
+                </tr>
+                <tr>
+                    <td id="tab2">Send Us Feedback</td>
+                    <td id="tab2">Delivery</td>
+                    <td id="tab2">Careers</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                    <td id="tab2">Returns</td>
+                    <td id="tab2">Investors</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                    <td id="tab2">Payment Options</td>
+                    <td id="tab2">Sustainability</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                    <td id="tab2">Report a Concern</td>
+                </tr>
+                <tr>
+                    <td id="tab2"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="main4">
+            <i class="fa-brands fa-square-twitter fa-xl" style="color: white;" id="icon1"></i>
+            <i class="fa-brands fa-square-facebook fa-xl" style="color: white;" id="icon2"></i>
+            <i class="fa-brands fa-square-youtube fa-xl" style="color: white;" id="icon2"></i>
+            <i class="fa-brands fa-square-instagram fa-xl" style="color: white;" id="icon2"></i>
+        </div>
+
+    </footer>
+</body>
+
+</html>
